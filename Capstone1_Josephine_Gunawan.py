@@ -621,10 +621,10 @@ def choose_treatment():
                         valid_selection = True
                 else:
                     print("Invalid choice, please select again.")
-                    break  
+                    return choose_treatment()  
             else:
                 print("Invalid input. Please enter numbers only.")
-                break  
+                return choose_treatment()  
 
         if valid_selection:
             return selected_treatments, total_price  
